@@ -8,12 +8,12 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Téléchargez l'app,<br />
+              Téléchargez l&apos;app,<br />
               Restez en sécurité,<br />
               Soyez alerté !
             </h1>
             <p className="text-gray-600 text-lg mb-8">
-              Téléchargez l'application Belela, créez votre compte et restez informé des incidents dans votre zone. Simple et efficace.
+              Téléchargez l&apos;application Belela, créez votre compte et restez informé des incidents dans votre zone. Simple et efficace.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="inline-block">

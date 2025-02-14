@@ -29,7 +29,7 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Signalez un incident</h3>
-                  <p className="text-gray-600">Sélectionnez votre localisation et le type d'incident que vous souhaitez signaler</p>
+                  <p className="text-gray-600">Sélectionnez votre localisation et le type d&apos;incident que vous souhaitez signaler</p>
                 </div>
               </div>
               
@@ -49,7 +49,7 @@ const Features = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-2">Restez informé</h3>
-                  <p className="text-gray-600">Suivez l'évolution des incidents et recevez des mises à jour en temps réel</p>
+                  <p className="text-gray-600">Suivez l&apos;évolution des incidents et recevez des mises à jour en temps réel</p>
                 </div>
               </div>
               
