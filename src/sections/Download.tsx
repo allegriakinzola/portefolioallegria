@@ -7,7 +7,7 @@ const Download = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl font-bold mb-6">Téléchargez l&apos;application Belela</h2>
+            <h2 className="text-3xl font-bold mb-6">Téléchargez l'application Belela</h2>
             <p className="text-lg mb-8">
               Belela est votre compagnon de sécurité au quotidien. Notre application
               simple et intuitive vous permet de rester informé et de contribuer à
