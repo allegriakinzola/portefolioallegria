@@ -17,20 +17,20 @@ const Download = () => {
     <span className='text-red-600 text-5xl md:text-6xl lg:text-8xl font-roboto'>Sécurisez</span>  
     votre famille et vos proches grâce à <span className='text-red-600'>BELELA</span>
   </h1>
-  <p className="text-xl md:text-lg lg:text-lg mb-8">
+  <h2 className="text-xl md:text-lg lg:text-lg mb-8">
   Grâce à Belela, la sécurité est désormais entre vos mains. Un cambriolage ? Un incendie ? Alertez immédiatement les forces de l’ordre et les pompiers via une technologie rapide et efficace. Protégez-vous, protégez vos proches !
-  </p>
+  </h2>
   <div className='flex flex-col md:flex-row gap-2 items-center md:items-start justify-center md:justify-start'>
     <Image
       src="/apple.png"
-      alt="Télécharger sur l'App Store"
+      alt="Télécharger l'application belela sur l'App Store"
       width={200} 
       height={100}
       className="h-auto max-w-[200px] md:max-w-[200px]" 
     />
     <Image
       src="/google.png"
-      alt="Télécharger sur Google Play"
+      alt="Télécharger l'application belela sur Google Play"
       width={200} 
       height={100}
       className="h-auto max-w-[200px] md:max-w-[200px]" 
@@ -41,7 +41,7 @@ const Download = () => {
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
               src="/phone.png"
-              alt="Belela App Screen 1"
+              alt="image de l'application belela"
               width={500} 
               height={300}
               className="h-auto max-w-[300px] md:max-w-[500px]" 
