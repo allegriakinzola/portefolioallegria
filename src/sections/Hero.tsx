@@ -1,10 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Hero = () => {
+export const Hero = () => {
   return (
-    <section className="pt-32 pb-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className=" w-full mx-auto px-20 bg-red-300">
+      <div className="w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">

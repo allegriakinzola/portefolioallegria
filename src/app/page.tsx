@@ -1,13 +1,12 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Hero from "@/sections/Hero";
+import Download from "../sections/Download";
+
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-red-600 flex items-center justify-center">
-      <main className="text-white text-center">
-        <h1 className="text-4xl font-bold">BELELA</h1>
-        <p className="mt-4 text-xl">Site en construction</p>
-      </main>
+    <div className="flex pt-20 w-full">
+       {/* <Hero/> */}
+      <Download/>
     </div>
   );
 }

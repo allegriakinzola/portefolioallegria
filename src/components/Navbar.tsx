@@ -1,39 +1,42 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import { CgDetailsMore } from "react-icons/cg";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="bg-white py-4 fixed w-full z-10 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-[#1a8917]">Belela</span>
-          </div>
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-gray-600 hover:text-[#1a8917]">Home</a>
-            <a href="#features" className="text-gray-600 hover:text-[#1a8917]">Comment ça marche</a>
-            <a href="#about" className="text-gray-600 hover:text-[#1a8917]">À propos</a>
-            <a href="#contact" className="text-gray-600 hover:text-[#1a8917]">Contact</a>
-            <div className="relative group">
-              <button className="text-gray-600 hover:text-[#1a8917] flex items-center">
-                Safety
-                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
-            <a href="#download" className="bg-[#1a8917] text-white px-4 py-2 rounded-full hover:bg-[#147811]">
-              Télécharger
-            </a>
-          </div>
-          <div className="md:hidden">
-            <button className="text-gray-600 hover:text-[#1a8917]">
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
+    <nav className="bg-white top-0 fixed w-full z-10 h-20 shadow-sm px-6 md:px-20">
+      <div className='flex justify-between h-full items-center'>
+        <h3 className='text-2xl font-bold'>Belela</h3>
+
+        {/* Menu pour grand écran */}
+        <div className='hidden md:flex items-center'>
+          <ul className='flex space-x-4'>
+            <li className='text-md'>Home</li>
+            <li className='text-md'>About</li>
+            <li className='text-md'>Contact</li>
+          </ul>
+          <button className='bg-red-600 text-white py-2 px-4 rounded-md ml-4'>Télécharger</button>
         </div>
+
+        {/* Bouton du menu mobile */}
+        <button className='md:hidden' onClick={() => setIsOpen(!isOpen)}>
+
+          {isOpen ? <CgDetailsMore size={24} /> : <CgDetailsMore size={24} />}
+        </button>
       </div>
+
+      {/* Menu mobile */}
+      {isOpen && (
+        <div className='md:hidden flex flex-col items-center bg-slate-300 w-full py-4 space-y-4'>
+          <a href="#" className='text-md'>Home</a>
+          <a href="#" className='text-md'>About</a>
+          <a href="#" className='text-md'>Contact</a>
+          <button className='bg-red-600 text-white py-2 px-4 rounded-md'>Télécharger</button>
+        </div>
+      )}
     </nav>
   );
 };
