@@ -13,6 +13,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        roboto: "var(--font-roboto), sans-serif",
+        poppins: "var(--font-poppins), sans-serif",
+        montserrat: "var(--font-montserrat), sans-serif",
+      },
     },
   },
   plugins: [],

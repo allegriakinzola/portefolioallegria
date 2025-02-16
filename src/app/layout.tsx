@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Roboto, Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -8,6 +8,26 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const roboto = Roboto({
+  subsets: ["latin"], // Charge uniquement les caractères nécessaires
+  weight: ["400", "700"], // Charge les styles Regular (400) et Bold (700)
+  variable: "--font-roboto", // Définit une variable CSS pour Tailwind
+});
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "600"],
+  variable: "--font-poppins",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-montserrat",
+});
+
+
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -25,10 +45,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" >
+      <body className={`${roboto.variable} ${geistMono.variable} ${poppins.variable} ${montserrat.variable} font-poppins antialiased`}>
         <div>
         <Navbar />
         {children}

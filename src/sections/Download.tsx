@@ -14,14 +14,11 @@ const Download = () => {
         <div className="flex flex-col  md:flex-row gap-10 justify-between items-center">
         <div className="w-full md:w-1/2 flex flex-col md:items-start items-center text-center md:text-left">
   <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-zinc-800">
-    <span className='text-red-600 text-5xl md:text-6xl lg:text-8xl'>Sécurisez</span>  
+    <span className='text-red-600 text-5xl md:text-6xl lg:text-8xl font-roboto'>Sécurisez</span>  
     votre famille et vos proches grâce à <span className='text-red-600'>BELELA</span>
   </h1>
-  <p className="text-xl md:text-xl lg:text-2xl mb-8">
-    Belela est votre compagnon de sécurité au quotidien. Notre application
-    simple et intuitive vous permet de rester informé et de contribuer à
-    la sécurité de votre communauté. Que vous soyez chez vous ou en
-    déplacement, Belela veille sur vous.
+  <p className="text-xl md:text-lg lg:text-lg mb-8">
+  Grâce à Belela, la sécurité est désormais entre vos mains. Un cambriolage ? Un incendie ? Alertez immédiatement les forces de l’ordre et les pompiers via une technologie rapide et efficace. Protégez-vous, protégez vos proches !
   </p>
   <div className='flex flex-col md:flex-row gap-2 items-center md:items-start justify-center md:justify-start'>
     <Image
