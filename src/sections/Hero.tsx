@@ -6,39 +6,39 @@ export default function Hero() {
   return (
     <section className="py-16 bg-white text-center">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900">How does this app work</h2>
+        <h2 className="text-3xl font-bold text-gray-900">Comment fonctionne cette application</h2>
         <p className="mt-4 text-gray-600">
-          Download catch driver app from Playstore, create an account, use your car and drive by yourself. Get rides and earn more money.
+          Téléchargez l'application Belela Driver depuis le Playstore, créez un compte, utilisez votre voiture et conduisez par vous-même. Obtenez des courses et gagnez plus d'argent.
         </p>
         <div className="mt-6 flex justify-center gap-4">
-          <button className="px-6 py-2 bg-gray-200 text-gray-800 rounded-lg">Passenger</button>
-          <button className="px-6 py-2 bg-green-600 text-white rounded-lg">Driver</button>
+          <button className="px-6 py-2 bg-gray-200 text-gray-800 rounded-lg">Passager</button>
+          <button className="px-6 py-2 bg-green-600 text-white rounded-lg">Chauffeur</button>
         </div>
       </div>
 
       <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
         <div className="relative w-full md:w-1/2 flex justify-center">
-          <Image src="/phonefeatures.png" alt="App Screenshot" width={500} height={500} className="rounded-lg" />
+          <Image src="/phonefeatures.png" alt="Capture d'écran de l'application" width={500} height={500} className="rounded-lg" />
         </div>
         
         <div className="space-y-8 max-w-md">
-          <Step title="Receive a Offer" description="Provide your details. Simply key in your information and let us know what you need." />
-          <Step title="Accept Offer" description="The G Garage app will help with valuations and locations of garages." />
-          <Step title="Start Trip" description="It's your turn to select your garage and the option that best suits." />
+          <Step title="Recevoir une offre" description="Fournissez vos informations. Entrez simplement vos détails et faites-nous savoir ce dont vous avez besoin." />
+          <Step title="Accepter l'offre" description="L'application Belela vous aidera avec les évaluations et les emplacements des chauffeurs." />
+          <Step title="Commencer le trajet" description="C'est votre tour de choisir votre chauffeur et l'option qui vous convient le mieux." />
         </div>
       </div>
 
-      {/* New Section: Download Roader App */}
+      {/* Nouvelle Section : Télécharger l'application Belela */}
       <div className="mt-16 bg-red-600 text-white py-12 px-6 rounded-lg max-w-5xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-8">
         <div className="md:w-1/2">
-          <h2 className="text-2xl font-bold">Download Roader App</h2>
+          <h2 className="text-2xl font-bold">Télécharger l'application Belela</h2>
           <p className="mt-4 text-white">
-            Roader is an awesome venture in the ride-hailing market in East Africa. Operated and owned by Africans for Africans, Roader brings local creativity and insights to get the importance of passengers and drivers. Whether you need to get where you're going fast or looking to make money on your schedule, Roader provides the best in class solution.
+            Belela est une initiative fantastique dans le marché du transport en Afrique de l'Est. Exploitée et dirigée par des Africains pour des Africains, Belela apporte de la créativité locale et des connaissances pour mieux comprendre les besoins des passagers et des chauffeurs. Que vous ayez besoin de vous rendre rapidement à destination ou que vous souhaitiez gagner de l'argent selon votre emploi du temps, Belela offre la meilleure solution.
           </p>
-          <button className="mt-6 px-6 py-2 bg-black text-white rounded-lg">Get Started</button>
+          <button className="mt-6 px-6 py-2 bg-black text-white rounded-lg">Commencer</button>
         </div>
         <div className="md:w-1/2 flex justify-center">
-          <Image src="/phone.png" alt="Roader App Screenshot" width={400} height={400} className="rounded-lg" />
+          <Image src="/phone.png" alt="Capture d'écran de l'application Belela" width={400} height={400} className="rounded-lg" />
         </div>
       </div>
     </section>
