@@ -1,33 +1,36 @@
-import React from 'react';
+import React from 'react'; 
 import Image from 'next/image';
 
 export const Features = () => {
   return (
-    <section className="py-16 bg-slate-200 text-center">
+    <section className="py-16 bg-slate-200 text-center px-6 md:px-20 mx-auto">
       <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900">Comment Belela fonctionne</h2>
+        <h2 className="text-3xl font-bold text-gray-900">Les fonctionnalités clés de Belela</h2>
         <p className="mt-4 text-gray-600">
-          Téléchargez l'application Belela Driver depuis le Playstore, créez un compte, utilisez votre voiture et conduisez par vous-même. Obtenez des courses et gagnez plus d'argent.
+          BELELA est une application mobile qui permet aux citoyens d’accéder rapidement aux services de police et de secours en cas d’urgence grâce à des fonctionnalités innovantes.
         </p>
       </div>
       <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
         <div className="space-y-8 max-w-sm">
-          <Step number={1} title="Demander un trajet" description="Choisissez vos lieux de prise en charge et de dépose, ainsi que le type de trajet qui correspond à vos besoins." />
-          <Step number={3} title="Profitez de votre trajet" description="Rencontrez votre chauffeur grâce à nos services GPS en temps réel et profitez de votre trajet !" />
+          <Step number={1} title="Appels d’urgence gratuits" description="Grâce aux numéros verts, les citoyens peuvent contacter la police et les pompiers même sans crédit téléphonique, garantissant ainsi une assistance immédiate en cas de danger." />
+          <Step number={3} title="Bouton d’alerte rapide" description="Un bouton d’urgence intégré permet d’envoyer un signal instantané aux autorités, sans passer par un appel vocal, idéal en cas de danger immédiat." />
         </div>
         <div>
           <Image src="/phonefeatures.png" alt="Capture d'écran de l'application" width={500} height={500} className="rounded-lg" />
         </div>
         <div className="space-y-8 max-w-sm">
-          <Step number={2} title="Associez-vous à un chauffeur" description="Belela vous associera au chauffeur disponible le plus proche." />
-          <Step number={4} title="Payer et évaluer" description="Payez en espèces ou par carte et évaluez votre chauffeur." />
+          <Step number={2} title="Géolocalisation des secours" description="L’application identifie automatiquement le poste de police ou la caserne de pompiers la plus proche pour assurer une intervention rapide et efficace." />
+          <Step number={4} title="Répertoire centralisé des services de sécurité" description="Accès rapide à un annuaire structuré de tous les numéros d’urgence, facilitant la mise en relation avec les services de secours." />
         </div>
       </div>
     </section>
+
+    
   );
 };
 
 export default Features;
+
 function Step({ number, title, description }: { number: number; title: string; description: string }) {
   return (
     <div className="flex items-center space-x-4">
@@ -41,4 +44,3 @@ function Step({ number, title, description }: { number: number; title: string; d
     </div>
   );
 }
-
