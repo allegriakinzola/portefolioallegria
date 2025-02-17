@@ -28,8 +28,7 @@ export const Features = () => {
 };
 
 export default Features;
-
-function Step({ number, title, description }) {
+function Step({ number, title, description }: { number: number; title: string; description: string }) {
   return (
     <div className="flex items-center space-x-4">
       <div className="flex items-center justify-center w-12 h-12 bg-red-600 text-white text-xl font-bold rounded-full shrink-0">
@@ -42,3 +41,4 @@ function Step({ number, title, description }) {
     </div>
   );
 }
+

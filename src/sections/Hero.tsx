@@ -45,7 +45,7 @@ export default function Hero() {
   );
 }
 
-function Step({ title, description }) {
+function Step({ title, description } : { title : string; description: string }) {
   return (
     <div className="flex items-start space-x-4">
       <div className="w-4 h-4 bg-green-600 rounded-full mt-2"></div>
