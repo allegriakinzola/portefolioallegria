@@ -1,73 +1,45 @@
 import React from 'react';
 import Image from 'next/image';
 
-const Features = () => {
+export const Features = () => {
   return (
-    <section id="features" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center mb-16">Comment Belela fonctionne</h2>
-        
-        <div className="relative">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="relative w-full pt-[200%] md:pt-[100%]">
-                <div className="absolute inset-0">
-                  <Image
-                    src="/app-screen.png"
-                    alt="Belela App Interface"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-1 gap-8">
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-[#e6f5e6] w-10 h-10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#1a8917] font-bold">1</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Signalez un incident</h3>
-                  <p className="text-gray-600">Sélectionnez votre localisation et le type d'incident que vous souhaitez signaler</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-[#e6f5e6] w-10 h-10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#1a8917] font-bold">2</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Recevez des alertes</h3>
-                  <p className="text-gray-600">Belela vous notifie instantanément des incidents dans votre zone</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-[#e6f5e6] w-10 h-10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#1a8917] font-bold">3</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Restez informé</h3>
-                  <p className="text-gray-600">Suivez l'évolution des incidents et recevez des mises à jour en temps réel</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="flex-shrink-0 bg-[#e6f5e6] w-10 h-10 rounded-full flex items-center justify-center mr-4">
-                  <span className="text-[#1a8917] font-bold">4</span>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Contribuez à la sécurité</h3>
-                  <p className="text-gray-600">Participez à la sécurité de votre communauté en partageant des informations utiles</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section className="py-16 bg-slate-200 text-center">
+    <div className="max-w-4xl mx-auto px-6">
+      <h2 className="text-3xl font-bold text-gray-900">How Roader Works</h2>
+      <p className="mt-4 text-gray-600">
+        Download Roader driver app from Playstore, create an account, use your car, and drive by yourself. Get rides and earn more money.
+      </p>
+    </div>
+    <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
+      <div className="space-y-8 max-w-sm">
+        <Step number={1} title="Request a Trip" description="Choose your pickup and drop-off locations, and the trip type that meets your needs." />
+        <Step number={3} title="Enjoy Your Trip" description="Meet your driver with the help of our real-time GPS services and enjoy your trip!" />
       </div>
-    </section>
+      <div>
+        <Image src="/phonefeatures.png" alt="App Screenshot" width={500} height={500} className="rounded-lg" />
+      </div>
+      <div className="space-y-8 max-w-sm">
+        <Step number={2} title="Match with a Driver" description="Roader will match you with the nearest available driver." />
+        <Step number={4} title="Pay and Rate" description="Pay with cash or card and rate your driver." />
+      </div>
+    </div>
+  </section>
   );
 };
 
 export default Features;
+
+function Step({ number, title, description }) {
+  return (
+    <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-center w-12 h-12 bg-red-600 text-white text-xl font-bold rounded-full shrink-0">
+        {number}
+      </div>
+      <div className="text-left">
+        <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
+        <p className="text-gray-600">{description}</p>
+      </div>
+    </div>
+  );
+}
+
