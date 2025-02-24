@@ -62,11 +62,9 @@ export default function RootLayout({
   return (
     <html lang="en" >
       <body className={`${roboto.variable} ${geistMono.variable} ${poppins.variable} ${montserrat.variable} font-poppins antialiased`}>
-        <div>
-        <Navbar />
+      {/* <Navbar /> */}
         {children}
-        <Footer/>
-        </div>
+        {/* <Footer/> */}
       </body>
     </html>
   );

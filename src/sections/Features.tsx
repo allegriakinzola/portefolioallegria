@@ -3,27 +3,51 @@ import Image from 'next/image';
 
 export const Features = () => {
   return (
-    <section className="py-16 bg-slate-200 text-center px-6 md:px-20 mx-auto">
-      <div className="max-w-4xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-900">Les fonctionnalités clés de Belela</h2>
-        <p className="mt-4 text-gray-600">
-          BELELA est une application mobile qui permet aux citoyens d’accéder rapidement aux services de police et de secours en cas d’urgence grâce à des fonctionnalités innovantes.
-        </p>
-      </div>
-      <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-12">
-        <div className="space-y-8 max-w-sm">
-          <Step number={1} title="Appels d’urgence gratuits" description="Grâce aux numéros verts, les citoyens peuvent contacter la police et les pompiers même sans crédit téléphonique, garantissant ainsi une assistance immédiate en cas de danger." />
-          <Step number={3} title="Bouton d’alerte rapide" description="Un bouton d’urgence intégré permet d’envoyer un signal instantané aux autorités, sans passer par un appel vocal, idéal en cas de danger immédiat." />
-        </div>
-        <div>
-          <Image src="/phonefeatures.png" alt="Capture d'écran de l'application" width={500} height={500} className="rounded-lg" />
-        </div>
-        <div className="space-y-8 max-w-sm">
-          <Step number={2} title="Géolocalisation des secours" description="L’application identifie automatiquement le poste de police ou la caserne de pompiers la plus proche pour assurer une intervention rapide et efficace." />
-          <Step number={4} title="Répertoire centralisé des services de sécurité" description="Accès rapide à un annuaire structuré de tous les numéros d’urgence, facilitant la mise en relation avec les services de secours." />
-        </div>
-      </div>
-    </section>
+    <section className="max-w-6xl mx-auto py-20 px-6">
+  <h2 className="text-3xl font-bold mb-6 text-white">
+    Things I do for you that simply make your software better.
+  </h2>
+  <p className="text-gray-400 mb-8">
+    Vivamus elementum semper nisi. Maecenas ullamcorper, dui et feugiat, eros pede.
+  </p>
+  <button className="px-6 py-3 border border-white text-white rounded-lg mb-10">
+    See all services
+  </button>
+
+  <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div className="p-6 rounded-xl bg-blue-400 text-black">
+      <h3 className="text-lg font-semibold">General code</h3>
+      <p className="text-sm mt-2">
+        Mauris sollicitudin fermentum libero. Vivamus aliquet elit ac nisl. Ut hac habitasse platea dictumst.
+      </p>
+      <a href="#" className="text-black font-medium mt-3 inline-block">Read more</a>
+    </div>
+
+    <div className="p-6 rounded-xl bg-gray-800 text-white">
+      <h3 className="text-lg font-semibold">Code systems</h3>
+      <p className="text-sm mt-2">
+        Mauris sollicitudin fermentum libero. Vivamus aliquet elit ac nisl. Ut hac habitasse platea dictumst.
+      </p>
+      <a href="#" className="text-blue-400 font-medium mt-3 inline-block">Read more</a>
+    </div>
+
+    <div className="p-6 rounded-xl bg-gray-800 text-white">
+      <h3 className="text-lg font-semibold">DevOps</h3>
+      <p className="text-sm mt-2">
+        Mauris sollicitudin fermentum libero. Vivamus aliquet elit ac nisl. Ut hac habitasse platea dictumst.
+      </p>
+      <a href="#" className="text-blue-400 font-medium mt-3 inline-block">Read more</a>
+    </div>
+
+    <div className="p-6 rounded-xl bg-gray-800 text-white">
+      <h3 className="text-lg font-semibold">Agile consulting</h3>
+      <p className="text-sm mt-2">
+        Mauris sollicitudin fermentum libero. Vivamus aliquet elit ac nisl. Ut hac habitasse platea dictumst.
+      </p>
+      <a href="#" className="text-blue-400 font-medium mt-3 inline-block">Read more</a>
+    </div>
+  </div>
+</section>
 
     
   );
