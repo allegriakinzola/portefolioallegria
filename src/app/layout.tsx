@@ -27,31 +27,45 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-
-
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: 'belela',
-  description: "Belela est une application de sécurité qui vous permet de protéger votre famille et vos proches en cas de cambriolage ou d'incendie dans la ville de kinshasa. Téléchargez l'application sur l'App Store ou Google Play.",
-  keywords: 'belela,incendie, cambriolage, sécurité,kinshasa, famille, proches,application de sécurité',
+  title: 'Allegria Kinzola | Développeur Full Stack',
+  description: "Portfolio d'Allegria Kinzola, développeur Full Stack passionné par la création d'expériences digitales uniques. Spécialisé en développement web, applications et design graphique.",
+  keywords: 'allegria kinzola, développeur web, full stack, react, next.js, node.js, design graphique, développeur rdc, portfolio',
   robots: 'index, follow',
-  openGraph: {
-    title: 'belela',
-    description: "Belela est une application de sécurité qui vous permet de protéger votre famille et vos proches en cas de cambriolage ou d'incendie dans la ville de kinshasa. Téléchargez l'application sur l'App Store ou Google Play.",
-    url: 'https://belela.tech',
-    siteName: 'belela',
-    // images: [
-    //   {
-    //     url: 'https://ton-domaine.com/chemin/vers/image.jpg',
-    //     width: 800,
-    //     height: 600,
-    //   },
-    // ],
+  icons: {
+    icon: [
+      { url: '/favicon.png', sizes: '32x32', type: 'image/png' }
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
   },
+  openGraph: {
+    title: 'Allegria Kinzola | Développeur Full Stack',
+    description: "Portfolio d'Allegria Kinzola, développeur Full Stack passionné par la création d'expériences digitales uniques. Spécialisé en développement web, applications et design graphique.",
+    url: 'https://allegriakinzola.com',
+    siteName: 'Portfolio Allegria Kinzola',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Allegria Kinzola - Développeur Full Stack'
+      }
+    ],
+    locale: 'fr_FR',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Allegria Kinzola | Développeur Full Stack',
+    description: "Portfolio d'Allegria Kinzola, développeur Full Stack passionné par la création d'expériences digitales uniques.",
+    images: ['/og-image.jpg'],
+  }
 };
 
 export default function RootLayout({
