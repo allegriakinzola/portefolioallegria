@@ -5,7 +5,9 @@ import {
   SiHtml5, SiCss3, SiJavascript, SiTypescript, 
   SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, 
   SiMongodb, SiFirebase, SiGit, SiGithub,
-  SiAdobephotoshop, SiAdobeillustrator
+  SiAdobephotoshop, SiAdobeillustrator,
+  SiDocker, SiPrisma, SiSequelize, SiPostgresql,
+  SiMysql
 } from 'react-icons/si';
 
 const skills = [
@@ -18,6 +20,11 @@ const skills = [
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
   { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
   { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-400" },
+  { name: "MySQL", icon: SiMysql, color: "text-blue-600" },
+  { name: "Prisma", icon: SiPrisma, color: "text-slate-800 dark:text-slate-200" },
+  { name: "Sequelize", icon: SiSequelize, color: "text-blue-600" },
+  { name: "Docker", icon: SiDocker, color: "text-blue-500" },
   { name: "Firebase", icon: SiFirebase, color: "text-yellow-500" },
   { name: "Git", icon: SiGit, color: "text-orange-600" },
   { name: "GitHub", icon: SiGithub, color: "text-gray-200" },

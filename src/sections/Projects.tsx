@@ -2,79 +2,45 @@
 import { motion } from 'framer-motion';
 import { fadeInUp, staggerContainer } from '@/utils/animations';
 import Image from 'next/image';
-import { FaGithub, FaExternalLinkAlt, FaLock } from 'react-icons/fa';
-import { SiReact, SiNodedotjs, SiTypescript, SiTailwindcss, SiMongodb, SiFirebase, SiExpress } from 'react-icons/si';
+import { FaExternalLinkAlt, FaLock } from 'react-icons/fa';
+import { SiPython, SiJavascript, SiBootstrap, SiReact, SiNodedotjs, SiTypescript, SiTailwindcss, SiMongodb, SiFirebase, SiExpress, SiNextdotjs } from 'react-icons/si';
 
 const projects = [
   {
-    title: "Heureka",
-    description: "Application innovante permettant de retrouver les cartes perdues (cartes d'identité, permis, etc.) grâce à un système de notification intelligent et une communauté engagée.",
-    image: "/projects/heureka.jpg",
+    title: "Lax Medical",
+    description: "Plateforme médicale innovante facilitant la gestion des rendez-vous et des consultations médicales en ligne.",
+    image: "/projects/laxmedical.png",
+    role: "Développeur frontend",
+    status: "Public",
+    technologies: [
+      { name: "Python", icon: SiPython },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "Bootstrap", icon: SiBootstrap }
+    ],
+    links: {
+      live: "https://www.medical.laxtech.pro/"
+    }
+  },
+  {
+    title: "Lax Market",
+    description: "Plateforme e-commerce complète permettant aux utilisateurs d'acheter et de vendre des produits en ligne.",
+    image: "/projects/laxmarket.png",
     role: "Développeur Web Full Stack",
     status: "Public",
     technologies: [
-      { name: "React", icon: SiReact },
-      { name: "Node.js", icon: SiNodedotjs },
-      { name: "MongoDB", icon: SiMongodb }
+      { name: "Python", icon: SiPython },
+      { name: "JavaScript", icon: SiJavascript },
+      { name: "Bootstrap", icon: SiBootstrap }
     ],
     links: {
-      github: "#",
-      live: "#"
-    }
-  },
-  {
-    title: "Belela",
-    description: "Application de lutte contre la criminalité permettant aux citoyens de signaler des incidents en temps réel et de collaborer avec les forces de l'ordre pour une ville plus sûre.",
-    image: "/projects/belela.jpg",
-    role: "Développeur Web Frontend",
-    status: "Confidentiel",
-    technologies: [
-      { name: "React", icon: SiReact },
-      { name: "Firebase", icon: SiFirebase },
-      { name: "TypeScript", icon: SiTypescript }
-    ],
-    links: {
-      github: "#",
-      live: "#"
-    }
-  },
-  {
-    title: "Ubuntu Kids",
-    description: "Application éducative interactive permettant aux enfants de découvrir l'histoire fascinante de l'Afrique à travers des jeux, des quiz et des histoires animées.",
-    image: "/projects/ubuntu.jpg",
-    role: "Développeur Web Full Stack",
-    status: "Public",
-    technologies: [
-      { name: "React", icon: SiReact },
-      { name: "TypeScript", icon: SiTypescript },
-      { name: "TailwindCSS", icon: SiTailwindcss }
-    ],
-    links: {
-      github: "#",
-      live: "#"
-    }
-  },
-  {
-    title: "Optimiste",
-    description: "Plateforme de podcast dédiée à la culture africaine, offrant des contenus riches et variés sur l'histoire, la musique, l'art et les traditions du continent.",
-    image: "/projects/optimiste.jpg",
-    role: "Développeur Web Frontend",
-    status: "Public",
-    technologies: [
-      { name: "React", icon: SiReact },
-      { name: "Node.js", icon: SiNodedotjs },
-      { name: "MongoDB", icon: SiMongodb }
-    ],
-    links: {
-      github: "#",
-      live: "#"
+      live: "https://www.market.laxtech.pro/"
     }
   },
   {
     title: "DGI Impôt",
     description: "Application de collecte et de gestion des impôts pour la Direction Générale des Impôts, facilitant le processus de déclaration et de paiement des impôts.",
-    image: "/projects/dgi.jpg",
-    role: "Développeur Web Full Stack",
+    image: "/projects/dgi.png",
+    role: "Développeur frontend",
     status: "Confidentiel",
     technologies: [
       { name: "React", icon: SiReact },
@@ -83,14 +49,13 @@ const projects = [
       { name: "MongoDB", icon: SiMongodb }
     ],
     links: {
-      github: "#",
       live: "#"
     }
   },
   {
-    title: "Shop Evirtus",
-    description: "Plateforme e-commerce spécialisée dans la vente de fournitures scolaires, offrant une expérience d'achat simplifiée pour les parents et les établissements scolaires.",
-    image: "/projects/evirtus.jpg",
+    title: "Heureka",
+    description: "Application innovante permettant de retrouver les cartes perdues (cartes d'identité, permis, etc.) grâce à un système de notification intelligent et une communauté engagée.",
+    image: "/projects/eureka.png",
     role: "Développeur Web Full Stack",
     status: "Public",
     technologies: [
@@ -99,16 +64,84 @@ const projects = [
       { name: "MongoDB", icon: SiMongodb }
     ],
     links: {
-      github: "#",
+      live: "https://eureka-weld.vercel.app/"
+    }
+  },
+  {
+    title: "Belela",
+    description: "Application de lutte contre la criminalité permettant aux citoyens de signaler des incidents en temps réel et de collaborer avec les forces de l'ordre pour une ville plus sûre.",
+    image: "/projects/belela.jpg",
+    role: "Développeur Web Frontend",
+    status: "Public",
+    technologies: [
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Firebase", icon: SiFirebase },
+      { name: "TypeScript", icon: SiTypescript }
+    ],
+    links: {
+      live: "https://www.belela.tech/"
+    }
+  },
+  {
+    title: "Ubuntu Kids",
+    description: "Application éducative interactive permettant aux enfants de découvrir l'histoire fascinante de l'Afrique à travers des jeux, des quiz et des histoires animées.",
+    image: "/projects/ubuntu.jpg",
+    role: "Développeur Web Full Stack",
+    status: "Confidentiel",
+    technologies: [
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "TypeScript", icon: SiTypescript },
+      { name: "TailwindCSS", icon: SiTailwindcss }
+    ],
+    links: {
       live: "#"
+    }
+  },
+  {
+    title: "Optimiste",
+    description: "Plateforme de podcast dédiée à la culture africaine, offrant des contenus riches et variés sur l'histoire, la musique, l'art et les traditions du continent.",
+    image: "/projects/optimiste.png",
+    role: "Développeur Web Full Stack",
+    status: "Confidentiel",
+    technologies: [
+      { name: "React", icon: SiReact },
+      { name: "Next.js", icon: SiNextdotjs },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "MongoDB", icon: SiMongodb }
+    ],
+    links: {
+      live: "#"
+    }
+  },
+  {
+    title: "Shop Evirtus",
+    description: "Plateforme e-commerce spécialisée dans la vente de fournitures scolaires, offrant une expérience d'achat simplifiée pour les parents et les établissements scolaires.",
+    image: "/projects/evirtus.png",
+    role: "Développeur Frontend",
+    status: "Public",
+    technologies: [
+      { name: "React", icon: SiReact },
+      { name: "Node.js", icon: SiNodedotjs },
+      { name: "MongoDB", icon: SiMongodb }
+    ],
+    links: {
+      live: "https://evirtus-site.vercel.app/"
     }
   }
 ];
 
 const Projects = () => {
   return (
-    <section className="py-20 px-6 md:px-20 bg-background-light dark:bg-background-dark relative overflow-hidden">
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section id="projects" className="py-20 px-6 md:px-20 bg-background-light dark:bg-background-dark relative">
+      <motion.div 
+        className="max-w-7xl mx-auto"
+        variants={staggerContainer}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+      >
         <motion.div 
           className="text-center mb-12"
           initial="initial"
@@ -121,34 +154,27 @@ const Projects = () => {
             <p className="text-primary-light">Projets</p>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-text-light dark:text-text-dark">
-            Mes <span className="text-primary-light">Réalisations</span>
+          Projets <span className="text-primary-light">réalisés</span>
           </h2>
         </motion.div>
-
-        <motion.div 
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          variants={staggerContainer}
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className="group relative bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 hover:border-primary-light/50 transition-all"
+              className="bg-white dark:bg-zinc-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               variants={fadeInUp}
             >
-              <div className="relative h-64 overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  priority={index < 2}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-6">
-                  <div className="flex gap-4">
+              <div className="relative">
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-black/60 flex flex-col justify-between p-4 opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="flex flex-wrap gap-3">
                     {project.technologies.map((tech, techIndex) => (
                       <tech.icon 
                         key={techIndex}
@@ -161,24 +187,15 @@ const Projects = () => {
                     {project.status === "Confidentiel" ? (
                       <FaLock className="text-2xl text-white" title="Projet Confidentiel" />
                     ) : (
-                      <>
-                        <a
-                          href={project.links.github}
-                          onClick={(e) => e.preventDefault()}
-                          className="text-white hover:text-primary-light transition-colors cursor-not-allowed"
-                          aria-label={`Code source de ${project.title} (Non disponible)`}
-                        >
-                          <FaGithub className="text-2xl" />
-                        </a>
-                        <a
-                          href={project.links.live}
-                          onClick={(e) => e.preventDefault()}
-                          className="text-white hover:text-primary-light transition-colors cursor-not-allowed"
-                          aria-label={`Site de ${project.title} (Non disponible)`}
-                        >
-                          <FaExternalLinkAlt className="text-2xl" />
-                        </a>
-                      </>
+                      <a
+                        href={project.links.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white hover:text-primary-light transition-colors"
+                        aria-label={`Visiter ${project.title}`}
+                      >
+                        <FaExternalLinkAlt className="text-2xl" />
+                      </a>
                     )}
                   </div>
                 </div>
@@ -189,30 +206,24 @@ const Projects = () => {
                     {project.title}
                   </h3>
                   <span className={`text-sm px-2 py-1 rounded ${
-                    project.status === "Confidentiel" 
-                      ? "bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400"
-                      : "bg-green-100 text-green-600 dark:bg-green-900/30 dark:text-green-400"
+                    project.status === "Public" 
+                      ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-100"
+                      : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-100"
                   }`}>
                     {project.status}
                   </span>
                 </div>
-                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
                   {project.description}
                 </p>
-                <p className="text-sm text-primary-light">
+                <p className="text-primary-light text-sm">
                   {project.role}
                 </p>
               </div>
             </motion.div>
           ))}
-        </motion.div>
-      </div>
-
-      {/* Background decoration */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute w-[500px] h-[500px] bg-primary-light/5 dark:bg-primary-light/10 rounded-full blur-3xl -top-32 -right-32"></div>
-        <div className="absolute w-[400px] h-[400px] bg-primary-light/5 dark:bg-primary-light/10 rounded-full blur-3xl bottom-0 -left-32"></div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
